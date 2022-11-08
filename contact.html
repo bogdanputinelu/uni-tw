@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./sneakers.png">
+    <link rel="stylesheet" type="text/css" href="./contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:ital,wght@0,100;0,300;0,600;1,100;1,300&display=swap" rel="stylesheet">
+
+    <title>CONTACT</title>
+</head>
+<body>
+<header>
+    <div class="meniu_contain">
+        <div class="meniu">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </div>
+
+    </div>
+    <img class="logo" src="meniu.svg" alt="x">
+    <div class="meniumediu">
+        <ul class="nav_link">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./men.html">Men</a></li>
+            <li><a href="./women.html">Women</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+        <button onclick="document.location='./contact.html'">Contact</button>
+    </div>
+    <nav>
+        <ul class="nav_link">
+            <li><a href="./home.html">Home</a> </li>
+            <li><a href="./men.html">Men</a></li>
+            <li><a href="./women.html">Women</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
+    <button onclick="document.location='./contact.html'">Contact</button>
+    <div class="dropdown">
+        <div class="dropcont" >
+            <img class="cos" src="cos.svg" onclick="cos(0)" alt="x">
+            <div class="cumparaturi">
+                <p>checkout</p><br><hr>
+            </div>
+        </div>
+        <div class="dropcont">
+            <img class="usericon" src="usericon.png" onclick="cos(1)" alt="x">
+            <div class="cumparaturi">
+                <p>user</p><br><hr>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="contactcontainer1">
+    <div class="harta"><img class="picharta" src="harta.PNG" alt="x"></div>
+    <div class="infoharta pozitionare" onmouseenter="apareRed(0,0)" onmouseleave="apareRed(1,0)">
+        <div class="titluharta">
+            <p>visit us</p>
+        </div>
+        <div class="hartadetalii">
+            <div class="hartaicon">
+                <img class="mapicon" src="hartaicon.svg" alt="x">
+                <img class="mapiconred" src="hartaiconred.svg" alt="x">
+            </div>
+            <div class="hartaicon1">
+                <p>Bulevardul Regina Elisabeta Nr. 4-12</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contactcontainer2">
+    <div class="infoharta binesfrate" onmouseenter="apareRed(0,1)" onmouseleave="apareRed(1,1)">
+        <div class="titluharta">
+            <p>call us</p>
+        </div>
+        <div class="hartadetalii">
+            <div class="hartaicon">
+                <img class="mapicon" src="tel.svg" alt="x">
+                <img class="mapiconred" src="telred.svg" alt="x">
+            </div>
+            <div class="hartaicon1">
+                <p>Customer Support: +0123456789</p>
+            </div>
+        </div>
+    </div>
+    <div class="infoharta binesfrate" onmouseenter="apareRed(0,2)" onmouseleave="apareRed(1,2)">
+        <div class="titluharta">
+            <p>message us</p>
+        </div>
+        <div class="hartadetalii">
+            <div class="hartaicon">
+                <img class="mapicon" src="email.svg" alt="x">
+                <img class="mapiconred" src="emailred.svg" alt="x">
+            </div>
+            <div class="hartaicon1">
+                <p>Customer Support: +9876543210</p>
+            </div>
+        </div>
+    </div>
+    <div class="infoharta binesfrate" onmouseenter="apareRed(0,3)" onmouseleave="apareRed(1,3)">
+        <div class="titluharta">
+            <p>follow us</p>
+        </div>
+        <div class="hartadetalii">
+            <div class="hartaicon">
+                <img class="mapicon" src="twitter.svg" alt="x">
+                <img class="mapiconred" src="twitterred.svg" alt="x">
+            </div>
+            <div class="hartaicon1">
+                <p>Our Twitter Account: @sneakers</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./contact.js"></script>
+</body>
+</html>

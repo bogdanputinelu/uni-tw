@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li, a, button{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #EDF0F1;
+    text-decoration: none;
+}
+.logo{
+    background-color: #000000;
+}
+body{
+    background-color: #000000;
+}
+header{
+    height: 11vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: 4px solid #0b6ca9;
+}
+.nav_link{
+    background-color: #000000;
+    list-style: none;
+}
+.nav_link li{
+    background-color: #000000;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_link li a{
+    background-color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.nav_link li a:hover{
+    color:#0b6ca9;
+}
+a{
+    background-color: #000000;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(11, 108, 169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(11, 108, 169,0.8);
+}
+.cos{
+    padding: 9px 9px;
+    background-color: rgba(	11, 108, 169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.cos:hover{
+    background-color: rgba(	11, 108, 169,0.8);
+}
+.usericon{
+    padding: 9px 9px;
+    background-color: rgba(	11, 108, 169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.usericon:hover{
+    background-color: rgba(	11, 108, 169,0.8);
+}
+.dropdown{
+    background-color: #000000;
+}
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.logo:hover {
+    animation: zoominoutsinglefeatured 1s infinite ;
+}
+.dropcont{
+    position: relative;
+}
+.dropdown{
+    width: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.cumparaturi{
+    position: absolute;
+    width: 15vw;
+    height: 50vh;
+    background-color: #000000;
+    z-index: 10;
+    display: none;
+    transform: translateX(-40%);
+    border-radius: 20px;
+    border: 3px solid #0b6ca9;
+    overflow: hidden;
+}
+.cumparaturi p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+.cumparaturi hr{
+    box-shadow: 0 0 8px 6px #0b6ca9;
+    border: 0;
+}
+
+@keyframes apasA {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes apasB {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.meniu_contain{
+    display: none;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    left: 10px;
+    position: absolute;
+}
+.meniu{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.meniu span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 60px;
+    background-color: #EDF0F1;
+    transform: rotate(0);
+    transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+span.one {
+    top: 0px;
+    width: 20px;
+}
+span.two {
+    top: 15px;
+    width: 10px;
+}
+span.three {
+    top: 30px;
+    width: 40px;
+}
+.meniu:hover .one {
+    animation: width 2s ease infinite;
+}
+
+.meniu:hover .two {
+    animation: width1 2s ease infinite;
+}
+
+.meniu:hover .three {
+    animation: width2 2s ease infinite;
+}
+@keyframes width {
+    0% {
+        width: 15px;
+    }
+    25% {
+        width: 40px;
+    }
+    50% {
+        width: 15px;
+    }
+    75% {
+        width: 40px;
+    }
+    100% {
+        width: 15px;
+    }
+}
+
+@keyframes width1 {
+    0% {
+        width: 30px;
+    }
+    25% {
+        width: 10px;
+    }
+    50% {
+        width: 40px;
+    }
+    75% {
+        width: 10px;
+    }
+    100% {
+        width: 30px;
+    }
+}
+
+@keyframes width2 {
+    0% {
+        width: 35px;
+    }
+    25% {
+        width: 10px;
+    }
+    50% {
+        width: 30px;
+    }
+    75% {
+        width: 40px;
+    }
+    100% {
+        width: 30px;
+    }
+}
+.clicked .one {
+    transform: translateY(15px) rotate(45deg);
+    width: 40px;
+}
+
+.clicked .two {
+    transform: translateX(-100vw);
+    opacity: 0;
+    width: 40px;
+}
+
+.clicked .three {
+    transform: translateY(-15px) rotate(-45deg);
+    width: 40px;
+}
+
+.clicked.meniu:hover .one,
+.clicked.meniu:hover .three {
+    animation: normal;
+}
+.meniumediu{
+    height: 89vh;
+    background-color: #000000;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top:11vh;
+    padding: 10px;
+    padding-right: 20px;
+    display: none;
+
+}
+body{
+    animation: incarcare 0.2s linear;
+}
+@keyframes incarcare {
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.cardlay{
+    width: 100vw;
+    height: 89vh;
+    background-color: black;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(10,1fr);
+    grid-template-areas:
+    ". . . . . . . . . ."
+    ". grid1 grid1 grid2 grid2 grid3 grid3 grid4 grid4 ."
+    ". grid1 grid1 grid2 grid2 grid3 grid3 grid4 grid4 ."
+    ". grid1 grid1 grid2 grid2 grid3 grid3 grid4 grid4 ."
+    ". . . . . . . . . ."
+;
+}
+.gridone{
+    grid-area: grid1;
+    background-color: #117ec3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.gridtwo{
+    grid-area: grid2;
+    background-color: #1491e1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.gridthree{
+    grid-area: grid3;
+    background-color: #2ba1eb;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.gridfour{
+    grid-area: grid4;
+    background-color: #49afef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.square1{
+    position: absolute;
+    background-color: #117ec3;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    top:0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 0;
+    transform: translateX(15px) rotate(45deg);
+}
+.square2{
+    position: absolute;
+    background-color: #1491e1;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    top:0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 0;
+    transform: translateX(15px) rotate(45deg);
+}
+.square3{
+    position: absolute;
+    background-color: #2ba1eb;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    top:0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 0;
+    transform: translateX(15px) rotate(45deg);
+}
+.gridone:hover, .gridone:hover .square1, .gridone:hover .titlucontinut1,.gridone:hover .continut1{
+    cursor: pointer;
+    background-color: #0b6ca9;
+}
+.gridtwo:hover, .gridtwo:hover .square2, .gridtwo:hover .titlucontinut2,.gridtwo:hover .continut2{
+    cursor: pointer;
+    background-color: #0b6ca9;
+}
+.gridthree:hover, .gridthree:hover .square3, .gridthree:hover .titlucontinut3, .gridthree:hover .continut3{
+    cursor: pointer;
+    background-color: #0b6ca9;
+}
+.gridfour:hover, .gridfour:hover .titlucontinut4, .gridfour:hover .continut4{
+    cursor: pointer;
+    background-color: #0b6ca9;
+}
+.titlucontinut1{
+    background-color: #117ec3;
+    width: 70%;
+    height: 10%;
+    z-index: 2;
+}
+.continut1{
+    background-color: #117ec3;
+    width: 70%;
+    height: 60%;
+    z-index: 2;
+}
+.titlucontinut1 p, .titlucontinut2 p, .titlucontinut3 p, .titlucontinut4 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    transition: transform 0.5s ease 0s;
+}
+.continut1 p, .continut2 p, .continut3 p, .continut4 p{
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    transition: transform 0.5s ease 0s;
+}
+.inform{
+    transition: transform 0.5s ease 0s;
+}
+.gridone:hover .inform, .gridtwo:hover .inform, .gridthree:hover .inform, .gridfour:hover .inform{
+    transform: scale(1.1);
+}
+.gridone:hover p, .gridtwo:hover p, .gridthree:hover p, .gridfour:hover p{
+    transform: scale(1.1);
+}
+.titlucontinut2{
+    background-color: #1491e1;
+    width: 70%;
+    height: 10%;
+    z-index: 2;
+}
+.continut2{
+    background-color: #1491e1;
+    width: 70%;
+    height: 60%;
+    z-index: 2;
+}
+.titlucontinut3{
+    background-color: #2ba1eb;
+    width: 70%;
+    height: 10%;
+    z-index: 2;
+}
+.continut3{
+    background-color: #2ba1eb;
+    width: 70%;
+    height: 60%;
+    z-index: 2;
+}
+.titlucontinut4{
+    background-color: #49afef;
+    width: 70%;
+    height: 10%;
+    z-index: 2;
+}
+.continut4{
+    background-color: #49afef;
+    width: 70%;
+    height: 60%;
+    z-index: 2;
+}
+@media only screen and (min-width: 600px) and (max-width: 870px){
+    .meniu_contain{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .nav_link li{
+        display: block;
+    }
+    .cumparaturi{
+        width: auto;
+    }
+    .container{
+        height: 15vh;
+    }
+    .cardlay{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas:
+        ". . . ."
+        ". grid1 grid2 ."
+        ". grid3 grid4 ."
+        ". . . ."
+    ;
+    }
+    .square2{
+        display: none;
+    }
+    .continut1 p, .continut2 p, .continut3 p, .continut4 p{
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    .titlucontinut1 p, .titlucontinut2 p, .titlucontinut3 p, .titlucontinut4 p{
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width: 599px){
+    .meniu_contain{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .nav_link li{
+        display: block;
+    }
+    .cumparaturi{
+        width: auto;
+    }
+    .logo{
+        width: 100px;
+        padding-left: 20px;
+    }
+    .container{
+        height: 10vh;
+    }
+    .cardlay{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "grid1"
+        "grid2"
+        "grid3"
+        "grid4"
+    ;
+    }
+    .square1{
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        bottom: 0;
+        margin-bottom: 0;
+        transform: translateX(15px) rotate(45deg) translateY(15px);
+    }
+    .square2{
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        bottom: 0;
+        margin-bottom: 0;
+        transform: translateX(15px) rotate(45deg) translateY(15px);
+    }
+    .square3{
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        bottom: 0;
+        margin-bottom: 0;
+        transform: translateX(15px) rotate(45deg) translateY(15px);
+    }
+    header{
+        border-bottom: none;
+    }
+    .continut1 p, .continut2 p, .continut3 p, .continut4 p{
+        padding-top: 20px;
+        font-size: 8px;
+    }
+    .titlucontinut1 p, .titlucontinut2 p, .titlucontinut3 p, .titlucontinut4 p{
+        font-size: 10px;
+    }
+}

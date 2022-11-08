@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./sneakers.png">
+    <link rel="stylesheet" type="text/css" href="./about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:ital,wght@0,100;0,300;0,600;1,100;1,300&display=swap" rel="stylesheet">
+
+    <title>ABOUT</title>
+</head>
+<body>
+<header>
+    <div class="meniu_contain">
+        <div class="meniu">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </div>
+
+    </div>
+    <img class="logo" src="meniu.svg" alt="x">
+    <div class="meniumediu">
+        <ul class="nav_link">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./men.html">Men</a></li>
+            <li><a href="./women.html">Women</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+        <button onclick="document.location='./contact.html'">Contact</button>
+    </div>
+    <nav>
+        <ul class="nav_link">
+            <li><a href="./home.html">Home</a> </li>
+            <li><a href="./men.html">Men</a></li>
+            <li><a href="./women.html">Women</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
+    <button onclick="document.location='./contact.html'">Contact</button>
+    <div class="dropdown">
+        <div class="dropcont" >
+            <img class="cos" src="cos.svg" onclick="cos(0)" alt="x">
+            <div class="cumparaturi">
+                <p>checkout</p><br><hr>
+            </div>
+        </div>
+        <div class="dropcont">
+            <img class="usericon" src="usericon.png" onclick="cos(1)" alt="x">
+            <div class="cumparaturi">
+                <p>user</p><br><hr>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="cardlay">
+    <div class="gridone">
+        <div><img class="inform" src="inform.svg" alt="x"></div>
+        <div class="titlucontinut1">
+            <p>about us</p>
+        </div>
+        <div class="continut1">
+            <p>We started manufacturing sneakers 2 years ago, because of low quality products on the market</p>
+        </div>
+        <div class="square1"></div>
+    </div>
+    <div class="gridtwo">
+        <div><img class="inform" src="exclam.svg" alt="x"></div>
+        <div class="titlucontinut2">
+            <p>news</p>
+        </div>
+        <div class="continut2">
+            <p>We will be returning with new products by the end of this month</p>
+        </div>
+        <div class="square2"></div>
+    </div>
+    <div class="gridthree">
+        <div><img class="inform" src="deliver.svg" alt="x"></div>
+        <div class="titlucontinut3">
+            <p>delivery</p>
+        </div>
+        <div class="continut3">
+            <p>Order our products and they will arrive within the day</p>
+        </div>
+        <div class="square3"></div>
+    </div>
+    <div class="gridfour">
+        <div><img class="inform" src="sustain.svg" alt="x"></div>
+        <div class="titlucontinut4">
+            <p>sustainable</p>
+        </div>
+        <div class="continut4">
+            <p>We make sure our products are sustainable</p>
+        </div>
+    </div>
+</div>
+<script src="./about.js"></script>
+</body>
+</html>

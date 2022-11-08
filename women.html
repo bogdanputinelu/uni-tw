@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./sneakers.png">
+    <link rel="stylesheet" type="text/css" href="./women.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:ital,wght@0,100;0,300;0,600;1,100;1,300&display=swap" rel="stylesheet">
+
+    <title>WOMEN</title>
+</head>
+<body>
+<div class="dreak">
+    <header>
+        <div class="meniu_contain">
+            <div class="meniu">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </div>
+
+        </div>
+        <img class="logo" src="meniu.svg" alt="x">
+        <div class="meniumediu">
+            <ul class="nav_link">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./men.html">Men</a></li>
+                <li><a href="./women.html">Women</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+            <button onclick="document.location='./contact.html'">Contact</button>
+        </div>
+        <nav>
+            <ul class="nav_link">
+                <li><a href="./home.html">Home</a> </li>
+                <li><a href="./men.html">Men</a></li>
+                <li><a href="./women.html">Women</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <button onclick="document.location='./contact.html'">Contact</button>
+        <div class="dropdown">
+            <div class="dropcont" >
+                <img class="cos" src="cos.svg" onclick="cos(0)" alt="x">
+                <div class="cumparaturi">
+                    <p>checkout</p><br><hr>
+                </div>
+            </div>
+            <div class="dropcont">
+                <img class="usericon" src="usericon.png" onclick="cos(1)" alt="x">
+                <div class="cumparaturi">
+                    <p>user</p><br><hr>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="paginaprodus">
+        <div class="sneakers" onclick="detalii('pantof4b.jpg')">
+            <img class="thumbnail" src="pantof4b.jpg" alt="x">
+            <div class="fade">
+                <p>p r e v i e w</p>
+            </div>
+        </div>
+        <div class="sneakers" onclick="detalii('pantof5b.jpg')">
+            <img class="thumbnail" src="pantof5b.jpg" alt="x">
+            <div class="fade">
+                <p>p r e v i e w</p>
+            </div>
+        </div>
+        <div class="sneakers" onclick="detalii('fpantof1e.jpg.png')">
+            <img class="thumbnail" src="fpantof1e.jpg.png" alt="x">
+            <div class="fade">
+                <p>p r e v i e w</p>
+            </div>
+        </div>
+        <div class="sneakers" onclick="detalii('fpantof2e.jpg.png')">
+            <img class="thumbnail" src="fpantof2e.jpg.png" alt="x">
+            <div class="fade">
+                <p>p r e v i e w</p>
+            </div>
+        </div>
+        <div class="sneakers" onclick="detalii('fpantof3e.jpg.png')">
+            <img class="thumbnail" src="fpantof3e.jpg.png" alt="x">
+            <div class="fade">
+                <p>p r e v i e w</p>
+            </div>
+        </div>
+        <div class="sneakers" onclick="detalii('fpantof4d.jpg.png')">
+            <img class="thumbnail" src="fpantof4d.jpg.png" alt="x">
+            <div class="fade">
+                <p>p r e v i e w</p>
+            </div>
+        </div>
+        <div class="sneakers" onclick="detalii('fpantof5d.jpg.png')">
+            <img class="thumbnail" src="fpantof5d.jpg.png" alt="x">
+            <div class="fade">
+                <p>p r e v i e w</p>
+            </div>
+        </div>
+    </div>
+    <div class="aldreak">
+        <div class="exit"><img class="iecsit" src="ics.png" onclick="iesiredetalii()" alt="x"></div>
+        <div class="containerdetalii">
+            <div class="prezentareprodus">
+                <div class="sageata1"><img class="sageatascroll1" src="sagstanga.png" onclick="selectarePozaLaDreapta()" alt="x"></div>
+                <div class="sageata2"><img class="sageatascroll2" src="sagdreapta.png" onclick="selectarePozaLaStanga()" alt="x"></div>
+                <div class="mainpoza"><img class="picmainpoza" src="pantof4b.jpg" alt="x"></div>
+                <div class="containersecpoza">
+                    <div class="secpoza"><img class="picsecpoza" src="pantof4b.jpg" onclick="selectarePoza(0)" alt="x"></div>
+                    <div class="secpoza"><img class="picsecpoza" src="pantof4a.jpg" onclick="selectarePoza(1)" alt="x"></div>
+                    <div class="secpoza"><img class="picsecpoza" src="pantof4c.jpg" onclick="selectarePoza(2)" alt="x"></div>
+                    <div class="secpoza"><img class="picsecpoza" src="pantof4d.jpg" onclick="selectarePoza(3)" alt="x"></div>
+                    <div class="secpoza"><img class="picsecpoza" src="pantof4e.jpg" onclick="selectarePoza(4)" alt="x"></div>
+                </div>
+            </div>
+            <div class="descriereprodus">
+                <div class="descrieretitlu">
+                    <p>nike air force</p>
+                </div>
+                <div class="descrierepantof">
+                    <p class="textprodus">Fresh off the court and back on the street, these legendary classics give a nod to Swoosh logo history with a blueprint schematic.</p>
+                    <br>
+                    <br>
+                    <p class="price">$99</p>
+                </div>
+                <div class="descrierecumparare">
+                    <div class="addcartaux">
+                        <button class="addcart">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aldreak1"></div>
+</div>
+<script src="./women.js"></script>
+</body>
+</html>
